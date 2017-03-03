@@ -1,0 +1,87 @@
+-=-=-=-=-=-=-
+    0.12
+-=-=-=-=-=-=-
+  * Cross Cursor in viewport widget
+  * Bugfixes missed while porting to PyQt4
+-=-=-=-=-=-=-
+    0.11
+-=-=-=-=-=-=-
+  * Update pyfits version to 1.3
+  * Application icon
+  * Move to PyQt4, PyQwt5, and removed PyKDE
+  * PySBIG is optional
+  * Software Binning
+  * Settings Dialog to set image precision added
+  * Added File->Open Recent
+  * Rearrange menu items
+-=-=-=-=-=-=-
+    0.10
+-=-=-=-=-=-=-
+  * DDP
+  * Fixed some image size checks
+  * Fixed wrong url reference for document copy()
+  * Resize document starts with documents size in options
+  * Scale dialog has size spin boxes
+  * Quadratic Sum Tool
+  * Fixed menu bug when color document opened after non color document.
+  * Multiply Tool added
+  * Laplacian of Gaussian Convolution added 
+-=-=-=-=-=-=-
+    0.09
+-=-=-=-=-=-=-
+  * Copy and Paste with selection added
+  * Doesn't crash on File->Quit anymore
+  * Resize Canvas Tool
+  * Fixed mean value in 60% divide (flat)
+-=-=-=-=-=-=-
+    0.08
+-=-=-=-=-=-=-
+  * inline C version of centroid.
+  * Fixed memory leak cuased from undo system
+  * Works with numpy 1.0.2 and scipy 0.5.x
+-=-=-=-=-=-=-
+    0.07
+-=-=-=-=-=-=-
+  * Make Center tool for centering an object
+  * Autocontrast works better
+  * Can right click on tab for popupmenu
+  * Workaround for RGB name increment
+
+-=-=-=-=-=-=-
+    0.06
+-=-=-=-=-=-=-
+  * Fixes reading background range from previously saved rgb and lrgb files.
+
+-=-=-=-=-=-=-
+    0.05
+-=-=-=-=-=-=-
+  * Changed auto contrast so it wouldn't prevent loading flat files.
+
+-=-=-=-=-=-=-
+    0.04
+-=-=-=-=-=-=-
+  * Rotate, Scale, Shift dialogs go back to default settings after apply.
+  * Convolution dialog to do convolutions with with Guassian, Zeros, and Custom kernels 
+  * Duplicate option
+  * Power Tool (i.e. each pixel x^y value)
+  * Can rename tabs
+  * Changed Contrast Dialogs
+
+-=-=-=-=-=-=-
+    0.03
+-=-=-=-=-=-=-
+  * Error message box gets shown if exception occurs
+  * Uses scipy histogram to improve speed
+  * Fixed getHistograms for color images so green and blue are in correct order
+  * Reorganized the ColorRGB?Document code
+  * Undo/Redo
+
+-=-=-=-=-=-=-
+    0.02
+-=-=-=-=-=-=-
+  * Added L/RGB capabilities instead of just RGB.
+  * Decompose created L/RGB images into separate images
+  * Able to create a new image with all pixels a specified value
+  * While opening a FITS image, it checks to see if HDU is primary or image HDU before trying to open
+
+

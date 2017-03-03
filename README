@@ -1,0 +1,16 @@
+Requirements: 
+PyQwt - (http://pyqwt.sourceforge.net/)
+PyQt - (http://www.riverbankcomputing.co.uk/pyqt/)
+numpy - (http://numpy.scipy.org/)
+scipy - (http://www.scipy.org/)
+astropy
+
+Optional:
+PySBIG - (http://coldstonelabs.org)
+
+
+After the requirements are installed run:
+
+cd directory_of_astrobuffer
+python astrobuffer.py
+

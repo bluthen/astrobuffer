@@ -1,0 +1,44 @@
+<!DOCTYPE kpartgui>
+<kpartgui name="astrobuffer" version="0.1">
+<MenuBar>
+    <Menu name="view"><text>&amp;View</text>
+        <Action name="view_mag_dialog"/>
+        <Action name="view_image_info"/>
+    </Menu>
+    <Menu name="visual"><text>&amp;Visual</text>
+        <Action name="tools_invert"/>
+        <Separator/>
+        <Action name="tools_contrast"/>
+        <Action name="tools_ddp"/>
+        <Separator/>
+        <Action name="tools_rgb"/>
+        <Action name="tools_drgb"/>
+    </Menu>
+    <Menu name="math"><text>&amp;Math</text>
+        <Action name="tools_sum"/>
+        <Action name="tools_quadraticsum"/>
+        <Action name="tools_subtract"/>
+        <Action name="tools_average"/>
+        <Action name="tools_divide"/>
+        <Action name="tools_multiply"/>
+        <Action name="tools_lesser"/>
+        <Separator/>
+        <Action name="tools_power"/>
+        <Action name="tools_convolution"/>
+    </Menu>
+    <Menu name="manipulate"><text>M&amp;anipulate</text>
+        <Action name="tools_resizecanvas"/>
+        <Action name="tools_scale"/>
+        <Action name="tools_bin"/>
+        <Action name="tools_shift"/>
+        <Action name="tools_rotate"/>
+        <Separator/>
+        <Action name="tools_makecenter"/>
+        <Action name="tools_align"/>
+        <Separator/>
+        <Action name="tools_duplicate"/>
+    </Menu>
+</MenuBar>
+<ToolBar name="mainToolBar">
+</ToolBar>
+</kpartgui>
