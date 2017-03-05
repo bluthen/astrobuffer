@@ -229,7 +229,7 @@ class View(QtGui.QWidget):
         # TODO: Find a better way to detect if fits or sbig
         try:
             # FITS Test
-            if line[0:6] == "SIMPLE" or line[0:8] == "XTENSION":
+            if '.fits' in url.getFullPath() or '.fts' in url.getFullPath() or '.fit' in url.getFullPath() or line[0:6] == "SIMPLE" or line[0:8] == "XTENSION":
                 # FITS
                 # If using fits
                 os.environ["NUMERIX"] = "numpy"

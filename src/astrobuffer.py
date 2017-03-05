@@ -430,7 +430,7 @@ class AstroBufferWindow(QtGui.QMainWindow):
         try:
             dir = Config().getSaveDir()
             fileNames = QtGui.QFileDialog.getOpenFileNames(self, "Open Image", dir,
-                                                           "FITS and SBIG (*.fit *.fts *.fits *.st9 *.st7)")
+                                                           "FITS and SBIG (*.fit *.fts *.fits *.st9 *.st7 *.fit.gz *.fts.gz *.fits.gz *.fit.bz2 *.fts.bz2 *.fits.bz2)")
             print "slotFileOpen() -- fileNames"
             print fileNames
             count = 0
