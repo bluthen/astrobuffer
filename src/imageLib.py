@@ -20,7 +20,8 @@ from math import *
 import numpy
 import time
 
-from scipy import weave, ndimage
+from scipy import ndimage
+import weave
 from PyQt4 import QtCore, QtGui
 
 from config import Config
