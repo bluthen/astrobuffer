@@ -34,7 +34,7 @@ class Undo:
 
     def setUndo(self, doc, replaceBrightRange=None, replaceData=None, isRedo=False):
         undoEvent = [doc.getBrightRange()]
-        if replaceData != None:
+        if replaceData is not None:
             undoEvent.append(doc.data)
         else:
             undoEvent.append(None)
@@ -53,7 +53,7 @@ class Undo:
             redoEvent = misc.unpickle(self.redoList[-1])
             self.setUndo(doc, redoEvent[0], redoEvent[1], True)
             doc.setBrightRange(redoEvent[0])
-            if redoEvent[1] != None:
+            if redoEvent[1] is not None:
                 doc.data = redoEvent[1]
             self.redoList[-1].close()
             self.redoList = self.redoList[0:-1]
@@ -64,7 +64,7 @@ class Undo:
             redoEvent = [doc.getBrightRange()]
             undoEvent = misc.unpickle(self.undoList[-1])
             doc.setBrightRange(undoEvent[0])
-            if undoEvent[1] != None:
+            if undoEvent[1] is not None:
                 redoEvent.append(doc.data)
                 doc.data = undoEvent[1]
             else:
@@ -91,7 +91,7 @@ class UndoRGB:
     def setUndo(self, doc, replaceBrightRange=None, replaceDatas=None, isRedo=False):
         undoEvent = [doc.getBrightRange()]
         for i in range(len(replaceDatas)):
-            if replaceDatas[i] != None:
+            if replaceDatas[i] is not None:
                 undoEvent.append(doc.rgb[i].data)
             else:
                 undoEvent.append(None)
@@ -111,7 +111,7 @@ class UndoRGB:
             self.setUndo(doc, redoEvent[0], redoEvent[1:], True)
             doc.setBrightRange(redoEvent[0])
             for i in range(1, len(redoEvent)):
-                if redoEvent[i] != None:
+                if redoEvent[i] is not None:
                     doc.rgb[i - 1].data = redoEvent[i]
             self.redoList[-1].close()
             self.redoList = self.redoList[0:-1]
@@ -123,7 +123,7 @@ class UndoRGB:
             undoEvent = misc.unpickle(self.undoList[-1])
             doc.setBrightRange(undoEvent[0])
             for i in range(1, len(undoEvent)):
-                if undoEvent[i] != None:
+                if undoEvent[i] is not None:
                     redoEvent.append(doc.rgb[i - 1].data)
                     doc.rgb[i - 1].data = undoEvent[i]
                 else:
